@@ -1,0 +1,53 @@
+/*
+	General styles
+*/
+body {
+}
+body, html {
+	height: 100%
+}
+
+h2 {
+	font-size: 20px;
+}
+.touchonly {
+	display: none;
+}
+html.touch .touchonly {
+	display: block;
+}
+.noselect, .noselect * {
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+}
+.doselect, .doselect *:not(.noselect) {
+	user-select: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-o-user-select: text;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
